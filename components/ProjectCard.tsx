@@ -5,7 +5,7 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="projectCard motionCard detailedProjectCard" data-reveal>
       {project.image ? (
-        <div className="projectImage">
+        <div className={`projectImage ${project.image.includes('botezien') ? 'packagePreview' : ''}`}>
           <img src={project.image} alt={`${project.title} 이미지`} />
         </div>
       ) : null}

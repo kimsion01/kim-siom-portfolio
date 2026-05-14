@@ -105,8 +105,3 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 - 오른쪽 미리보기 영역의 가로 스크롤 제거
 - 세로 스크롤만 자연스럽게 동작하도록 수정
 - 이미지 강제 확대/최소폭 설정을 제거해 화질 저하를 방지
-
-## Today Haedal PDF HQ
-- 업로드된 오늘, 해달 상세 PDF 12페이지를 고해상도 WebP 이미지로 렌더링
-- `/today-haedal` 상세 페이지를 PDF 기반 케이스 스터디로 재구성
-- 이미지 선명도와 반응형 레이아웃 개선

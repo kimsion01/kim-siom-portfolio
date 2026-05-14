@@ -56,7 +56,7 @@ export default function Home() {
           title="문제 분석부터 리디자인, 운영 개선까지 보여줍니다."
           description="단순 결과물보다 문제를 어떻게 정의하고, 실제 운영 가능한 구조로 개선했는지를 중심으로 구성했습니다."
         />
-        <FeatureCase image="/assets/featured/sinsang-renewal-main.png" />
+        <FeatureCase image="/assets/featured/sinsang-renewal-main-hq.webp" />
       </section>
 
       <section className="section">
@@ -186,8 +186,8 @@ export default function Home() {
             <h3>DalDal Slim Shake Package</h3>
             <p>제품 특성과 타깃 감성을 고려해 컬러와 패키지 비주얼 방향성 작업에 참여했습니다.</p>
           </div>
-          <div className="featureImg" data-parallax>
-            <img src="/assets/featured/botezien-package.jpg" alt="Botezien Package" />
+          <div className="featureImg packageFitImage" data-parallax>
+            <img src="/assets/featured/botezien-package-hq.webp" alt="Botezien Package" />
           </div>
         </article>
       </section>

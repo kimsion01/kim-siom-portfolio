@@ -9,7 +9,6 @@ type LightboxImage = {
 
 const clickableImageSelector = [
   '.featureImg img',
-  '.haedalPdfFrame img',
   '.projectImage img',
   '.aiGalleryItem img',
   '.masonryItem img',
