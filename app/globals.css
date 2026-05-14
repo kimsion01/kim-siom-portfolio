@@ -926,3 +926,86 @@ p{color:var(--sub);margin-top:0}
     right:12px;
   }
 }
+
+/* Hero visual badge overlap fix */
+.heroVisual,
+.heroImage,
+.heroMedia,
+.visualCard{
+  position:relative;
+}
+.heroVisual .label,
+.heroImage .label,
+.heroMedia .label,
+.visualCard .label,
+.heroVisual .tag,
+.heroImage .tag,
+.heroMedia .tag,
+.visualCard .tag{
+  position:relative;
+  z-index:2;
+}
+.heroVisual .label:first-child,
+.heroImage .label:first-child,
+.heroMedia .label:first-child,
+.visualCard .label:first-child,
+.heroVisual .tag:first-child,
+.heroImage .tag:first-child,
+.heroMedia .tag:first-child,
+.visualCard .tag:first-child{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  max-width:calc(100% - 96px);
+  margin-left:52px!important;
+  margin-bottom:12px!important;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.78);
+  color:#0071e3;
+  line-height:1;
+  white-space:nowrap;
+  backdrop-filter:blur(12px);
+}
+.browserDots,
+.windowDots,
+.cardDots,
+.heroDots{
+  position:absolute;
+  top:22px;
+  left:22px;
+  z-index:3;
+  display:flex;
+  gap:6px;
+  pointer-events:none;
+}
+.browserDots span,
+.windowDots span,
+.cardDots span,
+.heroDots span{
+  width:8px;
+  height:8px;
+  border-radius:999px;
+  display:block;
+}
+@media(max-width:640px){
+  .heroVisual .label:first-child,
+  .heroImage .label:first-child,
+  .heroMedia .label:first-child,
+  .visualCard .label:first-child,
+  .heroVisual .tag:first-child,
+  .heroImage .tag:first-child,
+  .heroMedia .tag:first-child,
+  .visualCard .tag:first-child{
+    margin-left:44px!important;
+    font-size:11px;
+    max-width:calc(100% - 72px);
+  }
+  .browserDots,
+  .windowDots,
+  .cardDots,
+  .heroDots{
+    top:20px;
+    left:20px;
+  }
+}

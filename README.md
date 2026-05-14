@@ -91,3 +91,7 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 
 ## Contact email updated
 - 하단 Contact 이메일을 `ontop4748@gmail.com`로 변경
+
+## Hero visual badge overlap fix
+- Hero 이미지 상단의 브라우저 컬러 도트와 `AI Beauty Campaign` 라벨이 겹치지 않도록 간격 수정
+- 모바일에서도 라벨과 도트가 분리되어 보이도록 보정
