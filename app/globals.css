@@ -1040,3 +1040,74 @@ p{color:var(--sub);margin-top:0}
     line-height:1.38;
   }
 }
+
+/* Sinsang redesign vertical-only high-quality preview */
+.featureImg.sinsangScrollFrame,
+.sinsangScrollFrame{
+  position:relative;
+  height:min(720px,72vh);
+  max-height:720px;
+  overflow-y:auto!important;
+  overflow-x:hidden!important;
+  overscroll-behavior:contain;
+  background:#fff;
+  border:1px solid rgba(255,255,255,.16);
+}
+.featureImg.sinsangScrollFrame img[src*="sinsang-renewal-main"],
+.sinsangScrollFrame img[src*="sinsang-renewal-main"]{
+  display:block;
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:top center!important;
+  image-rendering:auto;
+  transform:none!important;
+  filter:none!important;
+  backface-visibility:hidden;
+}
+.sinsangScrollFrame .scrollHint{
+  position:sticky;
+  top:12px;
+  left:12px;
+  z-index:4;
+  width:max-content;
+  margin:12px;
+  padding:7px 11px;
+  border-radius:999px;
+  background:rgba(17,17,17,.78);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:-.01em;
+  backdrop-filter:blur(12px);
+}
+.sinsangScrollFrame::-webkit-scrollbar{
+  width:10px;
+  height:0;
+}
+.sinsangScrollFrame::-webkit-scrollbar-thumb{
+  background:rgba(0,0,0,.22);
+  border-radius:999px;
+  border:2px solid #fff;
+}
+.sinsangScrollFrame::-webkit-scrollbar-track{
+  background:#fff;
+}
+@media(max-width:900px){
+  .featureImg.sinsangScrollFrame,
+  .sinsangScrollFrame{
+    height:620px;
+    max-height:70vh;
+  }
+}
+@media(max-width:640px){
+  .featureImg.sinsangScrollFrame,
+  .sinsangScrollFrame{
+    height:560px;
+    max-height:68vh;
+    border-radius:24px;
+  }
+}

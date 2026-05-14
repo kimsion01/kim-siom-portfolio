@@ -99,3 +99,9 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 ## Line-break polish
 - React/Next.js 소개 문구가 어색하게 줄바꿈되지 않도록 문장 압축
 - 한글/영문 혼합 타이틀에 `word-break: keep-all` 보정 적용
+
+## Sinsang vertical-only quality fix
+- 신상성형외과 리디자인 이미지를 원본 크기 기반 PNG로 재저장
+- 오른쪽 미리보기 영역의 가로 스크롤 제거
+- 세로 스크롤만 자연스럽게 동작하도록 수정
+- 이미지 강제 확대/최소폭 설정을 제거해 화질 저하를 방지

@@ -48,7 +48,7 @@ export function FeatureCase({ image }: FeatureCaseProps) {
       <div className="featureImg sinsangScrollFrame" data-parallax>
         {image ? (
           <>
-            <div className="scrollHint">Scroll to view full redesign</div>
+            <div className="scrollHint">세로 스크롤로 전체 리디자인 보기</div>
             <img src={image} alt="Sinsang Redesign" />
           </>
         ) : null}
