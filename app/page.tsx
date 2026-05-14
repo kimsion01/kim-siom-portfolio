@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <MotionProvider />
       <Header />
-      <Hero heroImage="/assets/featured/hero-ai.jpg" />
+      <Hero />
 
 
       <section className="section aboutSection">

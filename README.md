@@ -93,7 +93,6 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 - 하단 Contact 이메일을 `ontop4748@gmail.com`로 변경
 
 ## Hero visual badge overlap fix
-- Hero 이미지 상단의 브라우저 컬러 도트와 `AI Beauty Campaign` 라벨이 겹치지 않도록 간격 수정
 - 모바일에서도 라벨과 도트가 분리되어 보이도록 보정
 
 ## Line-break polish
@@ -105,3 +104,10 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 - 오른쪽 미리보기 영역의 가로 스크롤 제거
 - 세로 스크롤만 자연스럽게 동작하도록 수정
 - 이미지 강제 확대/최소폭 설정을 제거해 화질 저하를 방지
+
+## Image Lightbox Interaction
+
+- 포트폴리오 내 주요 이미지를 클릭하면 라이트박스가 열립니다.
+- 라이트박스 안에서 이미지를 한 번 더 클릭하면 `화면 맞춤`과 `원본 크기`가 전환됩니다.
+- 원본 크기 모드에서는 스크롤로 긴 이미지와 상세 이미지를 확인할 수 있습니다.
+- `+`, `-`, `0`, `ESC` 키보드 조작을 지원합니다.

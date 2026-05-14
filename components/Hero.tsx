@@ -1,14 +1,9 @@
-
 import { metrics } from '@/lib/portfolio-data';
 
-type HeroProps = {
-  heroImage: string;
-};
-
-export function Hero({ heroImage }: HeroProps) {
+export function Hero() {
   return (
     <section id="top" className="hero">
-      <div data-reveal>
+      <div className="heroContent" data-reveal>
         <div className="badge">Front-end Publisher · UI/UX · AI Creative</div>
         <h1>
           브랜드 경험을 이해하고
@@ -38,14 +33,6 @@ export function Hero({ heroImage }: HeroProps) {
           ))}
         </div>
       </div>
-
-      <aside className="heroCard motionDepth" data-reveal data-tilt data-parallax>
-        <div className="window">
-          <span className="dots" />
-          <span>AI Beauty Campaign</span>
-        </div>
-        {heroImage ? <img src={heroImage} alt="AI Beauty Visual" /> : null}
-      </aside>
     </section>
   );
 }
