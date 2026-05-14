@@ -37,7 +37,7 @@ export const projects: Project[] = [
     role: '기획 보조 · UI Design · Publishing · Maintenance',
     contribution: '반응형 퍼블리싱 · CMS 입력구조 제작 · DB 제작 · 페이지별 SEO 메타태그/콘텐츠 구조 최적화 개선',
     tools: 'HTML · CSS · JavaScript · jQuery · XD · Photoshop · Illustrator · ChatGPT · Claude · Gemini',
-    platform: '그누보드 · 카페24 · 아임웹 기반',
+    platform: '그누보드 · 카페24 기반',
     href: 'https://en.nanahospital.com',
   },
   {
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     role: '기획 보조 · UI Design · Publishing · Maintenance',
     contribution: '이벤트 랜딩 제작 · DB 입력폼 제작 · 신규 서브페이지 구축 · 콘텐츠 운영 개선',
     tools: 'HTML · CSS · JavaScript · jQuery · XD · Photoshop · Illustrator · ChatGPT · Claude · Gemini',
-    platform: '그누보드 · 카페24 · 아임웹 기반',
+    platform: '그누보드 · 카페24 기반',
     href: 'https://jp.nanahospital.com/page/breast_event04',
   },
   {
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     role: '기획 보조 · UI Design · Publishing · Maintenance',
     contribution: 'CMS 입력구조 제작 · 콘텐츠 등록 구조 개선 · 운영 반복 업무 감소',
     tools: 'HTML · CSS · JavaScript · jQuery · 그누보드 · 카페24',
-    platform: '그누보드 · 카페24 · 아임웹 기반',
+    platform: '그누보드 · 카페24 기반',
   },
   {
     label: 'EN Website · 2025',
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     role: '기획 보조 · UI Design · Publishing · Maintenance',
     contribution: '마케팅 콘텐츠 섹션 추가 · 글로벌 사용자 신뢰 요소 강화',
     tools: 'HTML · CSS · JavaScript · jQuery · Photoshop',
-    platform: '그누보드 · 카페24 · 아임웹 기반',
+    platform: '그누보드 · 카페24 기반',
   },
   {
     label: 'KPI Dashboard · 2025',

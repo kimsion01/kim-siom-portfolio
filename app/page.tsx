@@ -4,6 +4,7 @@ import { FeatureCase } from '@/components/FeatureCase';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { MotionProvider } from '@/components/MotionProvider';
+import { AiGalleryTabs } from '@/components/AiGalleryTabs';
 import { ProjectCard } from '@/components/ProjectCard';
 import { SectionHeader } from '@/components/SectionHeader';
 import { aiTools, designTokens, operationalCards, projects } from '@/lib/portfolio-data';
@@ -55,7 +56,7 @@ export default function Home() {
           title="문제 분석부터 리디자인, 운영 개선까지 보여줍니다."
           description="단순 결과물보다 문제를 어떻게 정의하고, 실제 운영 가능한 구조로 개선했는지를 중심으로 구성했습니다."
         />
-        <FeatureCase image="/assets/featured/sinsang-redesign.jpg" />
+        <FeatureCase image="/assets/featured/sinsang-renewal-main.png" />
       </section>
 
       <section className="section">
@@ -171,21 +172,7 @@ export default function Home() {
           </article>
         </div>
       </section>
-
-      <section id="gallery" className="section">
-        <SectionHeader
-          eyebrow="AI Visual Archive"
-          title="브랜드 활용 목적을 기준으로 선별한 AI 비주얼"
-          description="랜딩, SNS, 홈페이지 비주얼에 활용 가능한 대표 컷 중심으로 구성했습니다."
-        />
-        <div className="masonry">
-          {aiImages.map((src) => (
-            <div className="masonryItem" data-reveal key={src}>
-              <img src={src} alt="AI Visual" />
-            </div>
-          ))}
-        </div>
-      </section>
+      <AiGalleryTabs />
 
       <section className="section">
         <SectionHeader
