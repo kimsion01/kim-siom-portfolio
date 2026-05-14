@@ -54,3 +54,8 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 
 - NANA 글로벌 홈페이지: 페이지별 SEO 메타태그/콘텐츠 구조 최적화 개선
 - 신상성형외과 리뉴얼: 향후 SEO 개선을 고려해 통이미지 중심 콘텐츠를 텍스트/컴포넌트 기반 구조로 전환하는 방향 추가
+
+## Mobile / AI gallery tabs
+- 모바일 헤더 햄버거 메뉴 추가
+- AI Visual Archive를 얼굴컷 / 전신컷 탭 구조로 변경
+- 사용자가 제공한 AI 이미지 8장을 기준으로 갤러리 재구성
