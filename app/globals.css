@@ -1325,3 +1325,15 @@ p{color:var(--sub);margin-top:0}
     max-height:none!important;
   }
 }
+
+/* Today, Haedal project card preview */
+.projectImage.haedalPreview{
+  background:#f8fbff;
+  padding:10px;
+}
+.projectImage.haedalPreview img{
+  aspect-ratio:16/10;
+  object-fit:contain;
+  object-position:center;
+  background:#f8fbff;
+}

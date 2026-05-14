@@ -32,6 +32,17 @@ export const metrics = [
 
 export const projects: Project[] = [
   {
+    label: 'App UI/UX Case Study · 2023 / 2026',
+    title: '오늘, 해달 앱 디자인 · UX 케이스스터디',
+    desc: '2023년에 제작한 감정 기록·감사일기 앱 디자인을 2026년 포트폴리오용 UX 케이스스터디로 재정리했습니다. 기획, 페르소나, 플로우, 디자인 시스템, 모바일 화면, AI 기반 UX 확장 방향까지 함께 보여줍니다.',
+    role: 'UI/UX Design · App Planning · Case Study Refinement',
+    contribution: '모바일 앱 화면 설계 · 캐릭터/감정 시스템 구성 · UX Flow 정리 · 포트폴리오용 케이스스터디 보강',
+    tools: 'Figma · Photoshop · Illustrator · React · Next.js · ChatGPT',
+    platform: 'Personal App UI/UX Project',
+    href: '/today-haedal',
+    image: '/assets/today-haedal-2023-hq/today-haedal-2023-01.webp',
+  },
+  {
     label: 'Global Platform · 2024 — 2026',
     title: 'NANA 글로벌 홈페이지',
     desc: 'EN, JP, CN, TH, MN, ID, VN 사이트 유지보수. 페이지별 SEO 메타태그/콘텐츠 구조 최적화 개선, 중국 사이트 SNS 정책 대응, LASCOM 연계 글로벌 호스팅 속도 개선, 국가별 운영 환경 최적화.',

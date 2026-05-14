@@ -111,3 +111,7 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 - 라이트박스 안에서 이미지를 한 번 더 클릭하면 `화면 맞춤`과 `원본 크기`가 전환됩니다.
 - 원본 크기 모드에서는 스크롤로 긴 이미지와 상세 이미지를 확인할 수 있습니다.
 - `+`, `-`, `0`, `ESC` 키보드 조작을 지원합니다.
+
+
+## Included
+- 오늘, 해달 앱 디자인 UX 케이스스터디: `/today-haedal` 및 Selected Works 카드에 포함
