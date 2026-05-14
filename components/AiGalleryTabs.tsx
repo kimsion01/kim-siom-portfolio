@@ -2,8 +2,19 @@
 
 import { useState } from 'react';
 
-const faceImages = ['/assets/ai-gallery-face/face-01.jpg', '/assets/ai-gallery-face/face-02.jpg', '/assets/ai-gallery-face/face-03.jpg', '/assets/ai-gallery-face/face-04.jpg'];
-const fullImages = ['/assets/ai-gallery-full/full-01.jpg', '/assets/ai-gallery-full/full-02.jpg', '/assets/ai-gallery-full/full-03.jpg', '/assets/ai-gallery-full/full-04.jpg'];
+const faceImages = [
+  '/assets/ai-gallery-face/face-01.jpg',
+  '/assets/ai-gallery-face/face-02.jpg',
+  '/assets/ai-gallery-face/face-03.jpg',
+  '/assets/ai-gallery-face/face-04.jpg',
+];
+
+const fullImages = [
+  '/assets/ai-gallery-full/full-01.jpg',
+  '/assets/ai-gallery-full/full-02.jpg',
+  '/assets/ai-gallery-full/full-03.jpg',
+  '/assets/ai-gallery-full/full-04.jpg',
+];
 
 export function AiGalleryTabs() {
   const [activeTab, setActiveTab] = useState<'face' | 'full'>('face');
@@ -23,14 +34,32 @@ export function AiGalleryTabs() {
       </div>
 
       <div className="tabRow" data-reveal>
-        <button className={`tabButton ${activeTab === 'face' ? 'is-active' : ''}`} type="button" onClick={() => setActiveTab('face')}>얼굴컷</button>
-        <button className={`tabButton ${activeTab === 'full' ? 'is-active' : ''}`} type="button" onClick={() => setActiveTab('full')}>전신컷</button>
+        <button
+          className={`tabButton ${activeTab === 'face' ? 'is-active' : ''}`}
+          type="button"
+          aria-pressed={activeTab === 'face'}
+          onClick={() => setActiveTab('face')}
+        >
+          얼굴컷
+        </button>
+        <button
+          className={`tabButton ${activeTab === 'full' ? 'is-active' : ''}`}
+          type="button"
+          aria-pressed={activeTab === 'full'}
+          onClick={() => setActiveTab('full')}
+        >
+          전신컷
+        </button>
       </div>
 
-      <div className="aiGalleryGrid">
+      <div className="aiGalleryGrid" key={activeTab}>
         {images.map((src, index) => (
-          <article className="aiGalleryItem motionCard" data-reveal key={src}>
-            <img src={src} alt={`${activeTab === 'face' ? 'AI 얼굴컷' : 'AI 전신컷'} ${index + 1}`} />
+          <article className="aiGalleryItem motionCard" key={src}>
+            <img
+              src={src}
+              alt={`${activeTab === 'face' ? 'AI 얼굴컷' : 'AI 전신컷'} ${index + 1}`}
+              loading="lazy"
+            />
           </article>
         ))}
       </div>

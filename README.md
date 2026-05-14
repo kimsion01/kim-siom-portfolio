@@ -70,3 +70,7 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 - 모바일 햄버거 메뉴 추가
 - AI 갤러리 얼굴컷 / 전신컷 탭 추가
 - 신상성형외과 리뉴얼 메인 이미지를 사용자 첨부 이미지로 교체
+
+## AI gallery tab bugfix
+- 탭 전환 시 새로 렌더링되는 이미지 카드가 `data-reveal` opacity 상태에 걸려 보이지 않던 문제 수정
+- 얼굴컷/전신컷 탭 전환 후에도 이미지가 즉시 보이도록 변경
