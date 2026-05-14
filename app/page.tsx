@@ -196,8 +196,8 @@ export default function Home() {
         <p className="eyebrow">Contact</p>
         <h2>Kim Siom · Front-end Publisher · UI/UX · AI Creative</h2>
         <p>운영을 이해하는 퍼블리셔로서, AI를 활용해 더 빠르고 완성도 높은 디지털 경험을 만들겠습니다.</p>
-        <a className="btn primary" href="mailto:lpoint__@naver.com">
-          lpoint__@naver.com
+        <a className="btn primary" href="mailto:ontop4748@gmail.com">
+          ontop4748@gmail.com
         </a>
       </section>
 

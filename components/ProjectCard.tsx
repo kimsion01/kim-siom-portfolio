@@ -4,6 +4,11 @@ import type { Project } from '@/lib/portfolio-data';
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="projectCard motionCard detailedProjectCard" data-reveal>
+      {project.image ? (
+        <div className="projectImage">
+          <img src={project.image} alt={`${project.title} 이미지`} />
+        </div>
+      ) : null}
       <span className="label">{project.label}</span>
       <h3>{project.title}</h3>
       <p>{project.desc}</p>

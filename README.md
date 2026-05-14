@@ -74,3 +74,20 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 ## AI gallery tab bugfix
 - 탭 전환 시 새로 렌더링되는 이미지 카드가 `data-reveal` opacity 상태에 걸려 보이지 않던 문제 수정
 - 얼굴컷/전신컷 탭 전환 후에도 이미지가 즉시 보이도록 변경
+
+## Sinsang redesign scroll frame
+- 신상성형외과 리디자인 이미지를 전체 축소 통이미지가 아니라 확대된 스크롤 프레임으로 표시하도록 수정
+- 데스크톱/모바일에서 프레임 내부 스크롤로 전체 리디자인을 확인 가능
+
+## Botezien package image fix
+- 보테지앙 패키지 이미지를 웹 최적화 JPG로 교체
+- ProjectCard에 이미지 렌더링 필드 추가
+- object-fit: contain 기반으로 이미지 잘림/깨짐 방지
+
+## Global image lightbox
+- 포트폴리오 내 주요 이미지를 클릭하면 크게 볼 수 있는 라이트박스 기능 추가
+- 확대된 이미지/배경/닫기 버튼을 클릭하면 닫힘
+- ESC 키 닫기 지원
+
+## Contact email updated
+- 하단 Contact 이메일을 `ontop4748@gmail.com`로 변경

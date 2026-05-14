@@ -45,8 +45,13 @@ export function FeatureCase({ image }: FeatureCaseProps) {
           ))}
         </dl>
       </div>
-      <div className="featureImg" data-parallax>
-        {image ? <img src={image} alt="Sinsang Redesign" /> : null}
+      <div className="featureImg sinsangScrollFrame" data-parallax>
+        {image ? (
+          <>
+            <div className="scrollHint">Scroll to view full redesign</div>
+            <img src={image} alt="Sinsang Redesign" />
+          </>
+        ) : null}
       </div>
     </article>
   );

@@ -8,6 +8,7 @@ export type Project = {
   contribution?: string;
   tools?: string;
   platform?: string;
+  image?: string;
 };
 
 export type AiTool = {
@@ -114,6 +115,7 @@ export const projects: Project[] = [
     role: 'Package Design',
     contribution: '패키지 비주얼 방향성 · 제품 그래픽 디자인 · 3D 패키지 목업 제작 보조',
     tools: 'Photoshop · Illustrator · Blender',
+    image: '/assets/botezien/botezien-package-main.jpg',
   },
 ];
 
