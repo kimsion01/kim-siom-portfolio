@@ -95,3 +95,7 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 ## Hero visual badge overlap fix
 - Hero 이미지 상단의 브라우저 컬러 도트와 `AI Beauty Campaign` 라벨이 겹치지 않도록 간격 수정
 - 모바일에서도 라벨과 도트가 분리되어 보이도록 보정
+
+## Line-break polish
+- React/Next.js 소개 문구가 어색하게 줄바꿈되지 않도록 문장 압축
+- 한글/영문 혼합 타이틀에 `word-break: keep-all` 보정 적용

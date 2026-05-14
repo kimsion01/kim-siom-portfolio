@@ -45,8 +45,8 @@ export default function Home() {
 
         <div className="systemPanel motionDepth aboutTechPanel" data-reveal data-tilt>
           <span className="label">Built with React / Next.js</span>
-          <h3>AI를 활용해 React/Next.js 기반으로 컴포넌트를 분리하고, TypeScript 데이터 구조와 커스텀 motion hook을 적용한 반응형 포트폴리오를 제작했습니다.</h3>
-          <p>이 포트폴리오는 단순 정적 페이지가 아니라 컴포넌트, 데이터, 모션 로직을 분리해 유지보수성과 인터랙션 완성도를 높인 구조입니다. AI를 활용해 구조화·코드 제작·디버깅 속도를 높였습니다.</p>
+          <h3>AI를 활용해 React/Next.js 기반 반응형 포트폴리오를 제작했습니다.</h3>
+          <p>컴포넌트, 데이터, 모션 로직을 분리해 유지보수성과 인터랙션 완성도를 높였고, TypeScript와 커스텀 motion hook을 적용했습니다.</p>
         </div>
       </section>
 

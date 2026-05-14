@@ -1009,3 +1009,34 @@ p{color:var(--sub);margin-top:0}
     left:20px;
   }
 }
+
+/* Korean/English mixed text line-break polish */
+.aboutTechPanel h3,
+.systemPanel h3,
+.insightPanel h2,
+.projectCard h3,
+.feature h3,
+.contact h2{
+  word-break:keep-all;
+  overflow-wrap:normal;
+  line-break:strict;
+}
+.aboutTechPanel h3,
+.systemPanel h3{
+  max-width:1120px;
+  font-size:clamp(24px,2.1vw,34px);
+  line-height:1.32;
+  letter-spacing:-.035em;
+}
+.aboutTechPanel p,
+.systemPanel p{
+  max-width:1180px;
+  word-break:keep-all;
+}
+@media(max-width:760px){
+  .aboutTechPanel h3,
+  .systemPanel h3{
+    font-size:23px;
+    line-height:1.38;
+  }
+}
