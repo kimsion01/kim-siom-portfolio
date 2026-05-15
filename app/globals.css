@@ -1380,3 +1380,101 @@ p{color:var(--sub);margin-top:0}
 @media(max-width:1024px){
   .menuToggle{display:flex!important;}
 }
+
+/* Portfolio content depth update: role scope, implementation, AI workflow, impact */
+.roleScopeGrid,
+.implementationGrid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+.roleScopeCard{
+  min-height:260px;
+}
+.roleScopeCard strong{
+  display:block;
+  margin:14px 0 12px;
+  color:#111;
+  font-size:15px;
+  line-height:1.65;
+  letter-spacing:-.02em;
+  word-break:keep-all;
+}
+.impactHighlightGrid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:14px;
+}
+.impactCard{
+  min-height:240px;
+}
+.impactCard span,
+.workflowStep span{
+  display:inline-flex;
+  width:42px;
+  height:42px;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:18px;
+  border-radius:50%;
+  background:rgba(0,113,227,.1);
+  color:#0071e3;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+.implementationCard{
+  min-height:220px;
+}
+.workflowTimeline{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:14px;
+  margin-bottom:24px;
+}
+.workflowStep{
+  padding:26px;
+  border-radius:28px;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.06);
+}
+.workflowStep h3{
+  margin:0 0 10px;
+  font-size:21px;
+  line-height:1.25;
+  letter-spacing:-.035em;
+  word-break:keep-all;
+}
+.workflowStep p{
+  margin:0;
+  color:#6e6e73;
+  font-size:15px;
+  line-height:1.75;
+  word-break:keep-all;
+}
+.aiToolGrid{
+  margin-top:12px;
+}
+@media(max-width:1180px){
+  .impactHighlightGrid,
+  .workflowTimeline{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:760px){
+  .roleScopeGrid,
+  .implementationGrid,
+  .impactHighlightGrid,
+  .workflowTimeline{
+    grid-template-columns:1fr;
+  }
+  .roleScopeCard,
+  .implementationCard,
+  .impactCard{
+    min-height:auto;
+  }
+  .workflowStep{
+    padding:22px;
+    border-radius:24px;
+  }
+}

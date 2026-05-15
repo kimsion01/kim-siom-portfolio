@@ -7,9 +7,8 @@ import { MotionProvider } from '@/components/MotionProvider';
 import { AiGalleryTabs } from '@/components/AiGalleryTabs';
 import { ProjectCard } from '@/components/ProjectCard';
 import { SectionHeader } from '@/components/SectionHeader';
-import { aiTools, designTokens, operationalCards, projects } from '@/lib/portfolio-data';
+import { aiTools, aiWorkflowSteps, designTokens, implementationCards, operationalCards, projects, roleScopes } from '@/lib/portfolio-data';
 
-const aiImages = ["/assets/featured/ai-archive-01.jpg", "/assets/featured/ai-archive-02.jpg", "/assets/featured/ai-archive-03.jpg", "/assets/featured/ai-archive-04.jpg"];
 
 export default function Home() {
   return (
@@ -59,15 +58,33 @@ export default function Home() {
         <FeatureCase image="/assets/featured/sinsang-renewal-main-hq.png" />
       </section>
 
-      <section className="section">
+      <section className="section roleScopeSection">
+        <SectionHeader
+          eyebrow="Project Scope"
+          title="프로젝트별 담당 범위를 명확하게 정리했습니다."
+          description="디자인만 한 작업과 퍼블리싱·CMS·DB·유지보수까지 맡은 작업을 구분해 실제 기여도를 보여줍니다."
+        />
+        <div className="roleScopeGrid">
+          {roleScopes.map((item) => (
+            <article className="projectCard motionCard roleScopeCard" data-reveal key={item.title}>
+              <h3>{item.title}</h3>
+              <strong>{item.scope}</strong>
+              <p>{item.desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section impactSection">
         <SectionHeader
           eyebrow="Operational Impact"
-          title="운영 환경을 이해하고 개선한 경험"
-          description="정확한 수치를 임의로 만들지 않고, 실제 수행한 운영 개선 범위와 문제 해결 경험을 기준으로 정리했습니다."
+          title="숫자와 수행 범위로 보여주는 실무 기여도"
+          description="정확한 수치를 임의로 만들지 않고, 실제 수행한 운영 개선 범위와 1인 담당 경험을 기준으로 정리했습니다."
         />
-        <div className="grid grid4">
-          {operationalCards.map((card) => (
-            <article className="card motionCard" data-reveal key={card.title}>
+        <div className="impactHighlightGrid">
+          {operationalCards.map((card, index) => (
+            <article className="card motionCard impactCard" data-reveal key={card.title}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
               <h3>{card.title}</h3>
               <p>{card.desc}</p>
             </article>
@@ -114,6 +131,22 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section implementationSection">
+        <SectionHeader
+          eyebrow="Front-end Implementation"
+          title="React / Next.js로 실제 배포 가능한 포트폴리오를 구현했습니다."
+          description="단순 정적 페이지가 아니라 컴포넌트, 데이터, 인터랙션, 반응형 구조를 분리해 GitHub와 Vercel 배포까지 고려했습니다."
+        />
+        <div className="implementationGrid">
+          {implementationCards.map((card) => (
+            <article className="projectCard motionCard implementationCard" data-reveal key={card.title}>
+              <h3>{card.title}</h3>
+              <p>{card.desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section id="system" className="section">
         <SectionHeader
           eyebrow="Design System"
@@ -134,13 +167,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="ai" className="section">
+      <section id="ai" className="section aiWorkflowSection">
         <SectionHeader
           eyebrow="AI Workflow"
           title="AI 기반 제작 역량과 실무 활용 경험"
-          description="AI를 단순 이미지 생성 도구가 아니라, 기획 정리·브랜드 비주얼 제작·UI 문구 개선·코드 제작을 연결하는 실무형 제작 도구로 활용합니다."
+          description="AI를 단순 이미지 생성 도구가 아니라, 기획 정리·홈페이지/대시보드 제작·코드 보강·실사형 브랜드 비주얼 제작을 연결하는 실무형 제작 도구로 활용합니다."
         />
-        <div className="grid grid4">
+        <div className="workflowTimeline">
+          {aiWorkflowSteps.map((item) => (
+            <article className="workflowStep motionCard" data-reveal key={item.step}>
+              <span>{item.step}</span>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </article>
+          ))}
+        </div>
+        <div className="grid grid4 aiToolGrid">
           {aiTools.map((tool) => (
             <AiToolCard tool={tool} key={tool.name} />
           ))}

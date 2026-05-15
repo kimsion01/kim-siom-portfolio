@@ -1,121 +1,187 @@
-# Kim Siom Next.js Portfolio
+# Kim Siom Portfolio
 
-React / Next.js / TypeScript 기반 포트폴리오입니다.
+Front-end Publisher / UI·UX / AI Creative 포트폴리오입니다.  
+React, Next.js, TypeScript 기반으로 제작했으며, 병원·뷰티·브랜드 사이트 운영 경험과 AI 기반 콘텐츠 제작 역량을 함께 보여주는 제출용 포트폴리오입니다.
 
-## 실행
+## Positioning
+
+- Front-end Publisher
+- UI/UX Designer
+- AI Creative Operator
+- CMS/어드민 기반 웹사이트 운영 및 유지보수 경험
+- 병원 상세페이지, 이벤트 페이지, 랜딩페이지 제작 경험
+
+## Tech Stack
+
+- **Framework**: Next.js App Router
+- **Library**: React
+- **Language**: TypeScript
+- **Styling**: CSS, Responsive Layout, Component-based UI
+- **Interaction**: Custom reveal motion, image lightbox, original-size zoom
+- **Deployment**: GitHub + Vercel
+
+## Main Features
+
+- 반응형 포트폴리오 메인 페이지
+- 오늘, 해달 앱 디자인 상세 케이스스터디 `/today-haedal`
+- 프로젝트 카드 기반 Selected Works 구성
+- 신상성형외과 리뉴얼 Featured Case
+- 이미지 클릭 라이트박스
+- 원본 크기 보기 / 화면 맞춤 / 확대 / 축소 / ESC 닫기
+- 모바일 햄버거 메뉴
+- AI Gallery 얼굴컷 / 전신컷 탭
+- React/Next.js 구현 설명 섹션
+- AI Workflow 섹션
+- 성과/기여도 섹션
+
+## Project Scope
+
+### 신상성형외과 유지보수 및 리뉴얼 디자인, 가이드 제작
+
+- 기획
+- UI 리디자인
+- 반응형 퍼블리싱
+- 이미지 최적화
+- 유지보수
+- CMS 개선
+- SEO 개선
+- 리뉴얼 디자인 가이드 제작
+
+### NANA 성형외과 글로벌 홈페이지
+
+- 기획 보조
+- UI 리디자인
+- 반응형 퍼블리싱
+- 이미지 최적화
+- 유지보수
+- DB 저장 제작
+- CMS 개선
+- SEO 개선
+- EN, JP, CN, TH, MN, ID, VN 7개국 글로벌 사이트 1인 유지보수
+
+### 어반콘크리트
+
+- UI 개선
+- 반응형 퍼블리싱
+- 유지보수
+- CMS 사용방법 개선
+
+### 미클리닉
+
+- 기획
+- PHP 제작
+- 반응형 퍼블리싱
+- 랜딩 이미지 제작
+- 예약 폼 제작
+
+### 라미스떼
+
+- 광고 디자인 제작
+- 콘텐츠 유지보수
+
+### 보테지앙
+
+- 패키지 디자인
+
+## Operational Impact
+
+- 글로벌 사이트 7개국 운영 경험: EN, JP, CN, TH, MN, ID, VN 사이트 1인 100% 유지보수
+- CMS 기반 콘텐츠 유지보수 경험: CMS/어드민 기반 콘텐츠 등록, 수정, 노출 관리 1인 유지보수
+- 이벤트 신청 DB 폼 제작 경험: 기존 코드 구조를 기반으로 1인 제작
+- 병원 상세페이지 / 이벤트 페이지 / 랜딩페이지 다수 제작
+- AI 이미지 제작 및 실무 콘텐츠 적용 경험
+
+## Front-end Implementation
+
+이 포트폴리오는 React/Next.js 기반으로 직접 구조화한 프로젝트입니다.
+
+- Next.js App Router 기반 페이지 구성
+- React 컴포넌트 단위 섹션 설계
+- TypeScript 데이터 파일 기반 프로젝트 관리
+- 이미지 라이트박스 및 원본 크기 확대 기능 구현
+- 모바일 햄버거 메뉴 구현
+- 반응형 레이아웃 및 이미지 최적화
+- GitHub/Vercel 배포를 고려한 소스 구조 정리
+
+## AI Workflow
+
+AI를 단순 이미지 생성 도구가 아니라 기획, 개발, 디자인, 콘텐츠 보정까지 연결하는 실무 제작 도구로 활용합니다.
+
+1. **ChatGPT / Claude**  
+   콘텐츠 구조, UX 문구, 홈페이지 제작, 대시보드 제작, React/Next.js 코드 제작에 활용합니다.
+
+2. **Gemini**  
+   코드나 기획에서 부족한 부분을 보강하고, 서비스 흐름과 방향성을 교차 검토합니다.
+
+3. **Higgsfield / Nano Banana 2**  
+   인테리어 내부 이미지, AI 모델 이미지, 뷰티 캠페인형 비주얼을 더 현실적인 톤으로 제작합니다.
+
+4. **Photoshop / XD / Figma**  
+   AI로 제작한 이미지와 웹 시안을 최종 보정하고 실제 웹페이지에 맞게 이미지 크기, 비율, 포맷을 최적화합니다.
+
+## Folder Structure
+
+```text
+app/
+  page.tsx
+  layout.tsx
+  globals.css
+  today-haedal/
+    page.tsx
+components/
+  Header.tsx
+  Hero.tsx
+  FeatureCase.tsx
+  ProjectCard.tsx
+  AiToolCard.tsx
+  AiGalleryTabs.tsx
+  ImageLightbox.tsx
+  MotionProvider.tsx
+  SectionHeader.tsx
+lib/
+  portfolio-data.ts
+  motion.ts
+public/
+  assets/
+package.json
+tsconfig.json
+```
+
+## Run Locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## 배포
+## Build
 
-Vercel 배포 권장. GitHub 저장소에 업로드 후 Vercel에서 Import Project 하면 됩니다.
+```bash
+npm run build
+```
 
-## 구조
+## Deploy
 
-- `app/page.tsx`: 메인 포트폴리오
-- `app/today-haedal/page.tsx`: 오늘, 해달 상세 케이스스터디
-- `components/`: React 컴포넌트
-- `lib/portfolio-data.ts`: TypeScript 데이터
-- `lib/motion.ts`: Motion hooks
+Vercel 배포를 권장합니다.
 
-## Motion
+1. GitHub 저장소에 프로젝트 파일 업로드
+2. Vercel에서 `Add New Project`
+3. GitHub Repository 선택
+4. Framework Preset: `Next.js`
+5. Deploy
 
-Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
+## Upload Notes
 
+GitHub에는 ZIP 파일 자체를 올리지 말고, 압축을 푼 뒤 아래 파일과 폴더가 저장소 첫 화면에 보이도록 업로드합니다.
 
-## Today, Haedal 2023 이미지 반영
+```text
+app
+components
+lib
+public
+package.json
+tsconfig.json
+README.md
+```
 
-헤더 내 Today, Haedal 메뉴는 제거했고, 메인 프로젝트 카드와 상세 라우트(`/today-haedal`)에서만 접근하도록 구성했습니다. 2023년 원본 앱 디자인 이미지와 2026년 포트폴리오용 UX 보강 내용을 함께 정리했습니다.
-
-
-## About / Positioning 문구 추가
-
-메인에 About 섹션을 추가해 `Front-end Publisher · UI/UX · AI Creative` 포지션을 더 명확히 전달하도록 구성했습니다.
-
-포트폴리오 제작 문구:
-> React/Next.js 기반으로 컴포넌트를 분리하고, TypeScript 데이터 구조와 커스텀 motion hook을 활용해 반응형 포트폴리오를 제작했습니다.
-
-
-## Role / Contribution / Tools 반영
-
-각 프로젝트 카드에 Role, Contribution, Tools, Platform 정보를 추가해 실제 담당 범위가 명확히 보이도록 구성했습니다.
-
-
-## 추가 반영 사항
-- NANA 글로벌 홈페이지: 페이지별 SEO 최적화 개선 경험 반영
-- Platform: 그누보드 · 카페24 · 아임웹 기반 운영 경험 반영
-- AI-assisted React/Next.js 제작 역량 문구 반영
-
-
-## SEO / Search Optimization 반영
-
-- NANA 글로벌 홈페이지: 페이지별 SEO 메타태그/콘텐츠 구조 최적화 개선
-- 신상성형외과 리뉴얼: 향후 SEO 개선을 고려해 통이미지 중심 콘텐츠를 텍스트/컴포넌트 기반 구조로 전환하는 방향 추가
-
-## Mobile / AI gallery tabs
-- 모바일 헤더 햄버거 메뉴 추가
-- AI Visual Archive를 얼굴컷 / 전신컷 탭 구조로 변경
-- 사용자가 제공한 AI 이미지 8장을 기준으로 갤러리 재구성
-
-## Final visibility fix
-- 모바일 햄버거 메뉴를 1024px 이하부터 노출되도록 수정
-- AI Visual Archive 탭 UI를 더 명확히 표시
-- NANA / 일본 사이트 / 관리자 콘텐츠 / Shorts Google Review 섹션의 Platform에서 아임웹 제거
-
-## Final requested update
-- NANA / 일본 사이트 / 관리자 콘텐츠 / Shorts Google Review 섹션 Platform에서 아임웹 제거
-- 모바일 햄버거 메뉴 추가
-- AI 갤러리 얼굴컷 / 전신컷 탭 추가
-- 신상성형외과 리뉴얼 메인 이미지를 사용자 첨부 이미지로 교체
-
-## AI gallery tab bugfix
-- 탭 전환 시 새로 렌더링되는 이미지 카드가 `data-reveal` opacity 상태에 걸려 보이지 않던 문제 수정
-- 얼굴컷/전신컷 탭 전환 후에도 이미지가 즉시 보이도록 변경
-
-## Sinsang redesign scroll frame
-- 신상성형외과 리디자인 이미지를 전체 축소 통이미지가 아니라 확대된 스크롤 프레임으로 표시하도록 수정
-- 데스크톱/모바일에서 프레임 내부 스크롤로 전체 리디자인을 확인 가능
-
-## Botezien package image fix
-- 보테지앙 패키지 이미지를 웹 최적화 JPG로 교체
-- ProjectCard에 이미지 렌더링 필드 추가
-- object-fit: contain 기반으로 이미지 잘림/깨짐 방지
-
-## Global image lightbox
-- 포트폴리오 내 주요 이미지를 클릭하면 크게 볼 수 있는 라이트박스 기능 추가
-- 확대된 이미지/배경/닫기 버튼을 클릭하면 닫힘
-- ESC 키 닫기 지원
-
-## Contact email updated
-- 하단 Contact 이메일을 `ontop4748@gmail.com`로 변경
-
-## Hero visual badge overlap fix
-- 모바일에서도 라벨과 도트가 분리되어 보이도록 보정
-
-## Line-break polish
-- React/Next.js 소개 문구가 어색하게 줄바꿈되지 않도록 문장 압축
-- 한글/영문 혼합 타이틀에 `word-break: keep-all` 보정 적용
-
-## Sinsang vertical-only quality fix
-- 신상성형외과 리디자인 이미지를 원본 크기 기반 PNG로 재저장
-- 오른쪽 미리보기 영역의 가로 스크롤 제거
-- 세로 스크롤만 자연스럽게 동작하도록 수정
-- 이미지 강제 확대/최소폭 설정을 제거해 화질 저하를 방지
-
-## Image Lightbox Interaction
-
-- 포트폴리오 내 주요 이미지를 클릭하면 라이트박스가 열립니다.
-- 라이트박스 안에서 이미지를 한 번 더 클릭하면 `화면 맞춤`과 `원본 크기`가 전환됩니다.
-- 원본 크기 모드에서는 스크롤로 긴 이미지와 상세 이미지를 확인할 수 있습니다.
-- `+`, `-`, `0`, `ESC` 키보드 조작을 지원합니다.
-
-
-## Included
-- 오늘, 해달 앱 디자인 UX 케이스스터디: `/today-haedal` 및 Selected Works 카드에 포함
-
-## Latest user update
-- Removed the visual square box from the mobile hamburger button.
-- Replaced the Sinsang main portfolio image with the user-provided PNG file.
+`node_modules`, `.next`, `.vercel`, `out`, `dist`, ZIP 파일은 업로드하지 않습니다.

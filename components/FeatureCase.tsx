@@ -6,11 +6,11 @@ type FeatureCaseProps = {
 const sinsangMeta = [
   {
     label: 'Role',
-    value: '기획 · UI Design · Publishing · Maintenance · AI 이미지 제작',
+    value: '기획 · UI 리디자인 · 반응형 퍼블리싱 · 이미지 최적화 · 유지보수 · CMS 개선 · SEO 개선',
   },
   {
     label: 'Contribution',
-    value: '반응형 퍼블리싱 · CMS 입력구조 제작 · 콘텐츠 운영 개선 · 이벤트 시작/종료 일정 기반 노출 관리 기능 개선 · SEO 개선을 위한 텍스트/컴포넌트 구조 전환',
+    value: '신상성형외과 유지보수 및 리뉴얼 디자인 · 가이드 제작 · GNB/병원소개/커뮤니티/눈성형/안면윤곽 확장 구조 설계 · 통이미지 콘텐츠 개선 방향 정리',
   },
   {
     label: 'Tools',
@@ -23,16 +23,16 @@ export function FeatureCase({ image }: FeatureCaseProps) {
     <article className="feature motionDepth" data-reveal data-tilt>
       <div>
         <span className="label">Planning · Design · Publishing · Maintenance</span>
-        <h3>신상성형외과 국내 홈페이지 리디자인</h3>
+        <h3>신상성형외과 유지보수 및 리뉴얼 디자인, 가이드 제작</h3>
         <p>
           기존 사이트의 통이미지 서브페이지, 올드한 UI, 유지보수 어려움, 검색/접근성 문제를 개선하기 위해 GNB,
-          병원소개, 커뮤니티, 눈성형, 안면윤곽까지 확장 가능한 구조로 리디자인했습니다.
+          병원소개, 커뮤니티, 눈성형, 안면윤곽까지 확장 가능한 구조로 리디자인하고 운영 가이드를 정리했습니다.
         </p>
         <ul className="check">
           <li>통이미지 콘텐츠를 텍스트/컴포넌트 기반 구조로 개선</li>
           <li>GNB 중심 정보구조와 시술별 상세 흐름 설계</li>
           <li>상담 전환 CTA와 모바일 사용성 강화</li>
-          <li>이벤트 시작일·종료일 일정에 맞춰 어드민에서 노출을 관리할 수 있도록 개선</li>
+          <li>CMS/어드민에서 콘텐츠와 노출 상태를 더 쉽게 관리할 수 있도록 개선</li>
           <li>향후 SEO 개선을 고려해 통이미지 중심 콘텐츠를 텍스트/컴포넌트 기반 구조로 전환 예정</li>
         </ul>
 
