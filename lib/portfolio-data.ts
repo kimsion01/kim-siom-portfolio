@@ -57,7 +57,7 @@ export const projects: Project[] = [
     tools: 'Figma · Photoshop · Illustrator · React · Next.js · ChatGPT',
     platform: 'Personal App UI/UX Project',
     href: '/today-haedal',
-    image: '/assets/today-haedal-2023-hq/today-haedal-2023-01.webp',
+    image: '/assets/today-haedal-2023-hq/today-haedal-2023-01.jpg',
   },
   {
     label: 'Global Platform · 2024 — 2026',
@@ -143,7 +143,7 @@ export const projects: Project[] = [
     role: '패키지 디자인',
     contribution: '패키지 비주얼 방향성 · 제품 그래픽 디자인 · 3D 패키지 목업 제작 보조',
     tools: 'Photoshop · Illustrator · Blender',
-    image: '/assets/botezien/botezien-package-main-hq.webp',
+    image: '/assets/botezien/botezien-package-main-hq.jpg',
   },
 ];
 

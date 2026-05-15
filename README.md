@@ -185,3 +185,13 @@ README.md
 ```
 
 `node_modules`, `.next`, `.vercel`, `out`, `dist`, ZIP 파일은 업로드하지 않습니다.
+
+## Image Replacement Paths
+
+고화질 이미지를 직접 교체할 때는 아래 경로와 파일명을 그대로 맞춰 덮어쓰면 됩니다.
+
+- 메인 병원 리디자인 이미지: `public/assets/featured/sinsang-renewal-main-hq.png`
+- 오늘·해달 전체 이미지 폴더: `public/assets/today-haedal-2023-hq/`
+- 오늘·해달 파일명: `today-haedal-2023-01.jpg` ~ `today-haedal-2023-13.jpg`
+
+오늘·해달 이미지는 코드에서 `.jpg`로 연결되어 있으므로 JPG 파일로 넣어야 합니다.

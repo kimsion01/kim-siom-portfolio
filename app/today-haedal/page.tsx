@@ -4,19 +4,19 @@ import { Header } from '@/components/Header';
 import { MotionProvider } from '@/components/MotionProvider';
 
 const haedalImages = [
-  '/assets/today-haedal-2023-hq/today-haedal-2023-01.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-02.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-03.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-04.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-05.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-06.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-07.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-08.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-09.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-10.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-11.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-12.webp',
-  '/assets/today-haedal-2023-hq/today-haedal-2023-13.webp'
+  '/assets/today-haedal-2023-hq/today-haedal-2023-01.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-02.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-03.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-04.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-05.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-06.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-07.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-08.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-09.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-10.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-11.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-12.jpg',
+  '/assets/today-haedal-2023-hq/today-haedal-2023-13.jpg'
 ];
 
 const overview = [
