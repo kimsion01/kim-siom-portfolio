@@ -1337,3 +1337,46 @@ p{color:var(--sub);margin-top:0}
   object-position:center;
   background:#f8fbff;
 }
+
+/* FINAL USER FIX: hamburger icon only, no square button box */
+.menuToggle,
+.menuToggle.is-open{
+  appearance:none!important;
+  -webkit-appearance:none!important;
+  display:none;
+  width:36px!important;
+  height:36px!important;
+  min-width:36px!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  outline:0!important;
+  background:transparent!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+.menuToggle:focus,
+.menuToggle:focus-visible,
+.menuToggle:hover,
+.menuToggle:active{
+  border:0!important;
+  outline:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.menuToggle span{
+  width:22px!important;
+  height:2px!important;
+  background:#111!important;
+  border-radius:999px!important;
+}
+@media(max-width:1024px){
+  .menuToggle{display:flex!important;}
+}

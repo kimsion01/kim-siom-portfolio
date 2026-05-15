@@ -115,3 +115,7 @@ Scroll progress, reveal blur, pointer glow, card spotlight, tilt, parallax.
 
 ## Included
 - 오늘, 해달 앱 디자인 UX 케이스스터디: `/today-haedal` 및 Selected Works 카드에 포함
+
+## Latest user update
+- Removed the visual square box from the mobile hamburger button.
+- Replaced the Sinsang main portfolio image with the user-provided PNG file.
